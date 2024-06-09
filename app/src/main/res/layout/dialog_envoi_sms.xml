@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/dgres_sms_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Votre temperature est supérieur à 40 ,  envoyer un sms à votre medécin ?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.036" />
+
+    <Button
+        android:id="@+id/non_envoi_sms"
+        android:layout_width="116dp"
+        android:layout_height="45dp"
+        android:text="Non"
+        android:textColor="@color/colorWhite"
+        app:backgroundTint="#c62828"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.759"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dgres_sms_info"
+        app:layout_constraintVertical_bias="0.101" />
+
+    <Button
+        android:id="@+id/ok_envoi_sms"
+        android:layout_width="117dp"
+        android:layout_height="44dp"
+        android:text="Oui"
+        android:textColor="@color/colorWhite"
+        app:backgroundTint="#66bb6a"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.19"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dgres_sms_info"
+        app:layout_constraintVertical_bias="0.101"
+
+
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

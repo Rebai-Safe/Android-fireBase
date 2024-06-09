@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+
+    >
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/date_debut_conso_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="35dp"
+            android:text="date debut"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <TextView
+
+
+            android:id="@+id/ref_med_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toStartOf="@id/date_debut_conso_view"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="ref_med"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/duree_med_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ref_med_view"
+            android:layout_marginLeft="15dp"
+            android:text="duree"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
